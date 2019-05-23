@@ -46,7 +46,7 @@ void leapfrog(float t_inicial, float t_final, string filename){
   ofstream outfile;
   outfile.open(filename);
   while(t<t_final){     
-    outfile << t << " " << x << " " << y << " " << v_x << " " << v_y << endl;
+    outfile << t << " " << x << " " << y << endl;
     v_x = v_x + 0.5 * dt * (q*E_x(t)/m);
     v_y = v_y + 0.5 * dt * (q*E_y(t)/m);  
     x  = x + dt * v_x;
