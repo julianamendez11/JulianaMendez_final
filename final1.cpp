@@ -6,8 +6,8 @@ using namespace std;
 
 
 void leapfrog(float t_inicial, float t_final, string filename);
-float E_x(t);
-float E_y(t);
+float E_x(float t);
+float E_y(float t);
 
 const double m=7294.29;
 const int q=2;
@@ -19,18 +19,18 @@ int main(){
   return 0;
 }
 
-float E_x(t){
+float E_x(float t){
 return 0;
 }
 
-float E_y(t){
+float E_y(float t){
     if (t<3){ 
         return 0;
  }
-    if (3<T<7){ 
+    if (3<t<7){ 
         return 3;
  }
-    if (T>7){ 
+    if (t>7){ 
         return 0;
  }
 }
