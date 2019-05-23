@@ -18,10 +18,6 @@ def metropolis_hastings(arreglo):
 
 
 
-probable=np.mean(metropolis_hastings(tiempo))
-
-print("tiempo de lanzamiento:", " ", probable, "segundos +/- 1 segundo")
-
 
 probable_x=np.mean(metropolis_hastings(coordenada_x))
 
@@ -31,6 +27,11 @@ print("coordenada x:", " ", probable_x, "Km +/-  1 Km")
 probable_y=np.mean(metropolis_hastings(coordenada_y))
 
 print("coordenada y:", " ", probable_y, "Km +/-  1 Km")
+
+probable=np.mean(metropolis_hastings(tiempo))
+
+print("tiempo de lanzamiento:", " ", probable, "segundos +/- 1 segundo")
+
 
 velocidad_del_sonido=np.sqrt(probable_x**2 + probable_y**2)/probable
 print("Velocidad del sonido:", " ", velocidad_del_sonido, "m/s +/- 1m/s")
